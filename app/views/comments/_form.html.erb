@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%= form_for([@post, @post.comments.build]) do |f| %>
   <div class="field">
     <%= f.label :commenter %><br />
@@ -10,4 +11,18 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+=======
+<%= form_for([@post, @post.comments.build]) do |f| %>
+  <div class="field">
+    <%= f.label :commenter %><br />
+    <%= f.text_field :commenter %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+>>>>>>> 8e429967acf60fd5b0bd1d81f83bcaa0857ba79d
 <% end %>
